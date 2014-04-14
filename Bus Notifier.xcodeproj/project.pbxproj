@@ -394,7 +394,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Bus Notifier/Bus Notifier-Prefix.pch";
 				INFOPLIST_FILE = "Bus Notifier/Bus Notifier-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -408,7 +408,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Bus Notifier/Bus Notifier-Prefix.pch";
 				INFOPLIST_FILE = "Bus Notifier/Bus Notifier-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -473,6 +473,7 @@
 				7EDEA67118FBA0EF00AA545C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7EDEA67218FBA0EF00AA545C /* Build configuration list for PBXNativeTarget "Bus NotifierTests" */ = {
 			isa = XCConfigurationList;
@@ -481,6 +482,7 @@
 				7EDEA67418FBA0EF00AA545C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

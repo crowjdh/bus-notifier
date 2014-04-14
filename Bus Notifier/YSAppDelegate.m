@@ -7,6 +7,7 @@
 //
 
 #import "YSAppDelegate.h"
+#import "YSDeviceToken.h"
 
 @implementation YSAppDelegate
 
@@ -24,6 +25,10 @@
     
     #if !TARGET_IPHONE_SIMULATOR
     
+    // 싱글톤 세팅
+    [YSDeviceToken initWithDeviceToken:(NSData *)deviceToken];
+    
+    // 호스트에 요청 - 추후 디바이스 토큰을 DB에 저장하기 위함
     NSString *appName = [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleDisplayName"];
     NSString *appVersion = [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleVersion"];
     

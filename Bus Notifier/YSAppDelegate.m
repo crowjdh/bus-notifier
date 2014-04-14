@@ -13,6 +13,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    
     // 원격 노티피케이션을 위한 등록
     [[UIApplication sharedApplication] registerForRemoteNotificationTypes:(UIRemoteNotificationTypeAlert | UIRemoteNotificationTypeBadge | UIRemoteNotificationTypeSound)];
     application.applicationIconBadgeNumber = 0;
@@ -20,6 +21,7 @@
 }
 
 - (void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken {
+    
     #if !TARGET_IPHONE_SIMULATOR
     
     NSString *appName = [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleDisplayName"];
@@ -93,9 +95,6 @@
     NSLog(@"Register URL: %@", url);
     NSLog(@"Return Data: %@", returnData);
     
-    [request release];
-    [url release];
-    
     #endif
 }
 
@@ -108,6 +107,7 @@
 }
 
 - (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo {
+    
     #if !TARGET_IPHONE_SIMULATOR
     
     NSLog(@"Remote Notification: %@", [userInfo description]);
@@ -120,7 +120,6 @@
                                                   cancelButtonTitle:NSLocalizedString(@"OK", nil)
                                                   otherButtonTitles:nil];
         [alertView show];
-        [alertView release];
     } else {
         NSString *alert = [apsInfo objectForKey:@"alert"];
         NSLog(@"Received Push Alert: %@", alert);
@@ -133,6 +132,7 @@
         NSLog(@"userinfo: %@", userInfo);
     }
     application.applicationIconBadgeNumber = [[apsInfo objectForKey:@"badge"] integerValue];
+    
     #endif
 }
 							

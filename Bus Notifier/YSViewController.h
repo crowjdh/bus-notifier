@@ -10,4 +10,7 @@
 
 @interface YSViewController : UIViewController
 
+-(IBAction)registorButtonClicked:(id)sender;
+-(IBAction)cancelButtonClicked:(id)sender;
+
 @end

@@ -26,4 +26,13 @@
     // Dispose of any resources that can be recreated.
 }
 
+#pragma mark - Buttons
+-(IBAction)registorButtonClicked:(id)sender {
+    NSLog(@"registorButtonClicked");
+}
+
+-(IBAction)cancelButtonClicked:(id)sender {
+    NSLog(@"cancelButtonClicked");
+}
+
 @end

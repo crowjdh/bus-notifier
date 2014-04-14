@@ -1,0 +1,488 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7EDEA63E18FBA0EF00AA545C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EDEA63D18FBA0EF00AA545C /* Foundation.framework */; };
+		7EDEA64018FBA0EF00AA545C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EDEA63F18FBA0EF00AA545C /* CoreGraphics.framework */; };
+		7EDEA64218FBA0EF00AA545C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EDEA64118FBA0EF00AA545C /* UIKit.framework */; };
+		7EDEA64818FBA0EF00AA545C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7EDEA64618FBA0EF00AA545C /* InfoPlist.strings */; };
+		7EDEA64A18FBA0EF00AA545C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EDEA64918FBA0EF00AA545C /* main.m */; };
+		7EDEA64E18FBA0EF00AA545C /* YSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EDEA64D18FBA0EF00AA545C /* YSAppDelegate.m */; };
+		7EDEA65118FBA0EF00AA545C /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7EDEA64F18FBA0EF00AA545C /* Main_iPhone.storyboard */; };
+		7EDEA65418FBA0EF00AA545C /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7EDEA65218FBA0EF00AA545C /* Main_iPad.storyboard */; };
+		7EDEA65718FBA0EF00AA545C /* YSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EDEA65618FBA0EF00AA545C /* YSViewController.m */; };
+		7EDEA65918FBA0EF00AA545C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7EDEA65818FBA0EF00AA545C /* Images.xcassets */; };
+		7EDEA66018FBA0EF00AA545C /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EDEA65F18FBA0EF00AA545C /* XCTest.framework */; };
+		7EDEA66118FBA0EF00AA545C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EDEA63D18FBA0EF00AA545C /* Foundation.framework */; };
+		7EDEA66218FBA0EF00AA545C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EDEA64118FBA0EF00AA545C /* UIKit.framework */; };
+		7EDEA66A18FBA0EF00AA545C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7EDEA66818FBA0EF00AA545C /* InfoPlist.strings */; };
+		7EDEA66C18FBA0EF00AA545C /* Bus_NotifierTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EDEA66B18FBA0EF00AA545C /* Bus_NotifierTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7EDEA66318FBA0EF00AA545C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7EDEA63218FBA0EF00AA545C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7EDEA63918FBA0EF00AA545C;
+			remoteInfo = "Bus Notifier";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7EDEA63A18FBA0EF00AA545C /* Bus Notifier.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bus Notifier.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7EDEA63D18FBA0EF00AA545C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		7EDEA63F18FBA0EF00AA545C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		7EDEA64118FBA0EF00AA545C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		7EDEA64518FBA0EF00AA545C /* Bus Notifier-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Bus Notifier-Info.plist"; sourceTree = "<group>"; };
+		7EDEA64718FBA0EF00AA545C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		7EDEA64918FBA0EF00AA545C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7EDEA64B18FBA0EF00AA545C /* Bus Notifier-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bus Notifier-Prefix.pch"; sourceTree = "<group>"; };
+		7EDEA64C18FBA0EF00AA545C /* YSAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YSAppDelegate.h; sourceTree = "<group>"; };
+		7EDEA64D18FBA0EF00AA545C /* YSAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YSAppDelegate.m; sourceTree = "<group>"; };
+		7EDEA65018FBA0EF00AA545C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		7EDEA65318FBA0EF00AA545C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		7EDEA65518FBA0EF00AA545C /* YSViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YSViewController.h; sourceTree = "<group>"; };
+		7EDEA65618FBA0EF00AA545C /* YSViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YSViewController.m; sourceTree = "<group>"; };
+		7EDEA65818FBA0EF00AA545C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		7EDEA65E18FBA0EF00AA545C /* Bus NotifierTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Bus NotifierTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7EDEA65F18FBA0EF00AA545C /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		7EDEA66718FBA0EF00AA545C /* Bus NotifierTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Bus NotifierTests-Info.plist"; sourceTree = "<group>"; };
+		7EDEA66918FBA0EF00AA545C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		7EDEA66B18FBA0EF00AA545C /* Bus_NotifierTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Bus_NotifierTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7EDEA63718FBA0EF00AA545C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7EDEA64018FBA0EF00AA545C /* CoreGraphics.framework in Frameworks */,
+				7EDEA64218FBA0EF00AA545C /* UIKit.framework in Frameworks */,
+				7EDEA63E18FBA0EF00AA545C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7EDEA65B18FBA0EF00AA545C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7EDEA66018FBA0EF00AA545C /* XCTest.framework in Frameworks */,
+				7EDEA66218FBA0EF00AA545C /* UIKit.framework in Frameworks */,
+				7EDEA66118FBA0EF00AA545C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7EDEA63118FBA0EF00AA545C = {
+			isa = PBXGroup;
+			children = (
+				7EDEA64318FBA0EF00AA545C /* Bus Notifier */,
+				7EDEA66518FBA0EF00AA545C /* Bus NotifierTests */,
+				7EDEA63C18FBA0EF00AA545C /* Frameworks */,
+				7EDEA63B18FBA0EF00AA545C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7EDEA63B18FBA0EF00AA545C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7EDEA63A18FBA0EF00AA545C /* Bus Notifier.app */,
+				7EDEA65E18FBA0EF00AA545C /* Bus NotifierTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7EDEA63C18FBA0EF00AA545C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7EDEA63D18FBA0EF00AA545C /* Foundation.framework */,
+				7EDEA63F18FBA0EF00AA545C /* CoreGraphics.framework */,
+				7EDEA64118FBA0EF00AA545C /* UIKit.framework */,
+				7EDEA65F18FBA0EF00AA545C /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7EDEA64318FBA0EF00AA545C /* Bus Notifier */ = {
+			isa = PBXGroup;
+			children = (
+				7EDEA64C18FBA0EF00AA545C /* YSAppDelegate.h */,
+				7EDEA64D18FBA0EF00AA545C /* YSAppDelegate.m */,
+				7EDEA64F18FBA0EF00AA545C /* Main_iPhone.storyboard */,
+				7EDEA65218FBA0EF00AA545C /* Main_iPad.storyboard */,
+				7EDEA65518FBA0EF00AA545C /* YSViewController.h */,
+				7EDEA65618FBA0EF00AA545C /* YSViewController.m */,
+				7EDEA65818FBA0EF00AA545C /* Images.xcassets */,
+				7EDEA64418FBA0EF00AA545C /* Supporting Files */,
+			);
+			path = "Bus Notifier";
+			sourceTree = "<group>";
+		};
+		7EDEA64418FBA0EF00AA545C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7EDEA64518FBA0EF00AA545C /* Bus Notifier-Info.plist */,
+				7EDEA64618FBA0EF00AA545C /* InfoPlist.strings */,
+				7EDEA64918FBA0EF00AA545C /* main.m */,
+				7EDEA64B18FBA0EF00AA545C /* Bus Notifier-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7EDEA66518FBA0EF00AA545C /* Bus NotifierTests */ = {
+			isa = PBXGroup;
+			children = (
+				7EDEA66B18FBA0EF00AA545C /* Bus_NotifierTests.m */,
+				7EDEA66618FBA0EF00AA545C /* Supporting Files */,
+			);
+			path = "Bus NotifierTests";
+			sourceTree = "<group>";
+		};
+		7EDEA66618FBA0EF00AA545C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7EDEA66718FBA0EF00AA545C /* Bus NotifierTests-Info.plist */,
+				7EDEA66818FBA0EF00AA545C /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7EDEA63918FBA0EF00AA545C /* Bus Notifier */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7EDEA66F18FBA0EF00AA545C /* Build configuration list for PBXNativeTarget "Bus Notifier" */;
+			buildPhases = (
+				7EDEA63618FBA0EF00AA545C /* Sources */,
+				7EDEA63718FBA0EF00AA545C /* Frameworks */,
+				7EDEA63818FBA0EF00AA545C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Bus Notifier";
+			productName = "Bus Notifier";
+			productReference = 7EDEA63A18FBA0EF00AA545C /* Bus Notifier.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7EDEA65D18FBA0EF00AA545C /* Bus NotifierTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7EDEA67218FBA0EF00AA545C /* Build configuration list for PBXNativeTarget "Bus NotifierTests" */;
+			buildPhases = (
+				7EDEA65A18FBA0EF00AA545C /* Sources */,
+				7EDEA65B18FBA0EF00AA545C /* Frameworks */,
+				7EDEA65C18FBA0EF00AA545C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7EDEA66418FBA0EF00AA545C /* PBXTargetDependency */,
+			);
+			name = "Bus NotifierTests";
+			productName = "Bus NotifierTests";
+			productReference = 7EDEA65E18FBA0EF00AA545C /* Bus NotifierTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7EDEA63218FBA0EF00AA545C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = YS;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Yooii Studios";
+				TargetAttributes = {
+					7EDEA65D18FBA0EF00AA545C = {
+						TestTargetID = 7EDEA63918FBA0EF00AA545C;
+					};
+				};
+			};
+			buildConfigurationList = 7EDEA63518FBA0EF00AA545C /* Build configuration list for PBXProject "Bus Notifier" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7EDEA63118FBA0EF00AA545C;
+			productRefGroup = 7EDEA63B18FBA0EF00AA545C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7EDEA63918FBA0EF00AA545C /* Bus Notifier */,
+				7EDEA65D18FBA0EF00AA545C /* Bus NotifierTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7EDEA63818FBA0EF00AA545C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7EDEA65418FBA0EF00AA545C /* Main_iPad.storyboard in Resources */,
+				7EDEA65918FBA0EF00AA545C /* Images.xcassets in Resources */,
+				7EDEA65118FBA0EF00AA545C /* Main_iPhone.storyboard in Resources */,
+				7EDEA64818FBA0EF00AA545C /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7EDEA65C18FBA0EF00AA545C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7EDEA66A18FBA0EF00AA545C /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7EDEA63618FBA0EF00AA545C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7EDEA65718FBA0EF00AA545C /* YSViewController.m in Sources */,
+				7EDEA64E18FBA0EF00AA545C /* YSAppDelegate.m in Sources */,
+				7EDEA64A18FBA0EF00AA545C /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7EDEA65A18FBA0EF00AA545C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7EDEA66C18FBA0EF00AA545C /* Bus_NotifierTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7EDEA66418FBA0EF00AA545C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7EDEA63918FBA0EF00AA545C /* Bus Notifier */;
+			targetProxy = 7EDEA66318FBA0EF00AA545C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7EDEA64618FBA0EF00AA545C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7EDEA64718FBA0EF00AA545C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		7EDEA64F18FBA0EF00AA545C /* Main_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7EDEA65018FBA0EF00AA545C /* Base */,
+			);
+			name = Main_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		7EDEA65218FBA0EF00AA545C /* Main_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7EDEA65318FBA0EF00AA545C /* Base */,
+			);
+			name = Main_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		7EDEA66818FBA0EF00AA545C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7EDEA66918FBA0EF00AA545C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7EDEA66D18FBA0EF00AA545C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7EDEA66E18FBA0EF00AA545C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7EDEA67018FBA0EF00AA545C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Bus Notifier/Bus Notifier-Prefix.pch";
+				INFOPLIST_FILE = "Bus Notifier/Bus Notifier-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		7EDEA67118FBA0EF00AA545C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Bus Notifier/Bus Notifier-Prefix.pch";
+				INFOPLIST_FILE = "Bus Notifier/Bus Notifier-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		7EDEA67318FBA0EF00AA545C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Bus Notifier.app/Bus Notifier";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Bus Notifier/Bus Notifier-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Bus NotifierTests/Bus NotifierTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		7EDEA67418FBA0EF00AA545C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Bus Notifier.app/Bus Notifier";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Bus Notifier/Bus Notifier-Prefix.pch";
+				INFOPLIST_FILE = "Bus NotifierTests/Bus NotifierTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7EDEA63518FBA0EF00AA545C /* Build configuration list for PBXProject "Bus Notifier" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7EDEA66D18FBA0EF00AA545C /* Debug */,
+				7EDEA66E18FBA0EF00AA545C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7EDEA66F18FBA0EF00AA545C /* Build configuration list for PBXNativeTarget "Bus Notifier" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7EDEA67018FBA0EF00AA545C /* Debug */,
+				7EDEA67118FBA0EF00AA545C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		7EDEA67218FBA0EF00AA545C /* Build configuration list for PBXNativeTarget "Bus NotifierTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7EDEA67318FBA0EF00AA545C /* Debug */,
+				7EDEA67418FBA0EF00AA545C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7EDEA63218FBA0EF00AA545C /* Project object */;
+}
